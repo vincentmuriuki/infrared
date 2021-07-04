@@ -2,6 +2,7 @@ import Calendar from "views/Calendar.js";
 import Widgets from "views/Widgets.js";
 import Dashboard from "views/Dashboard.js";
 import Users from 'views/Users';
+import Transactions from 'views/Transactions';
 
 const routes = [
   {
@@ -18,7 +19,7 @@ const routes = [
     name: "Transactions",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-sound-wave",
-    component: Dashboard,
+    component: Transactions,
     layout: "/admin"
   },
 
