@@ -29,7 +29,7 @@ import ReactBSAlert from 'react-bootstrap-sweetalert';
 
 import { Link } from 'react-router-dom';
 
-class Users extends React.Component {
+class Rides extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -92,41 +92,31 @@ class Users extends React.Component {
                       </DropdownMenu>
                     </UncontrolledDropdown>
                   </div>
-                  <CardTitle tag='h4'>Users</CardTitle>
+                  <CardTitle tag='h4'>Rides</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Table responsive>
                     <thead className='text-primary'>
                       <tr>
-                        <th>Name</th>
-                        <th>Email</th>
+                        <th className='text-center'>#</th>
+
+                        <th>Driver id</th>
+                        <th>Date of departure</th>
                         <th>Status</th>
-                        <th>Role</th>
-                        <th>Client</th>
+                        <th>Verified.</th>
+                        <th>Booked rides/available</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
+                        <td className='text-center'>
+                          <Link>1</Link>
+                        </td>
                         <td>PG65F48U3V</td>
                         <td>12 June, 2021</td>
-                        <td>100.00</td>
-                        <td>708698589</td>
-                        <td>
-                          <Button
-                            className='btn-link'
-                            color='success'
-                            id='tooltip974171201'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-alert-circle-exc' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip974171201'
-                          >
-                            Approve
-                          </UncontrolledTooltip>
-                        </td>
+                        <td>Started</td>
+                        <td>True</td>
+                        <td>2/3</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -194,4 +184,4 @@ class Users extends React.Component {
   }
 }
 
-export default Users;
+export default Rides;

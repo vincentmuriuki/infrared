@@ -6,6 +6,7 @@ import { Line, Bar } from 'react-chartjs-2';
 // react plugin for creating vector maps
 import { VectorMap } from 'react-jvectormap';
 import ReactTable from 'react-table';
+import { Link } from 'react-router-dom';
 
 // reactstrap components
 import {
@@ -218,19 +219,13 @@ class Dashboard extends React.Component {
                     <tbody>
                       <tr>
                         <td className='text-center'>
-                          <div className='photo'>
-                            <img
-                              alt='...'
-                              src={require('assets/img/tania.jpg')}
-                            />
-                          </div>
+                          <Link>1</Link>
                         </td>
                         <td>Andrew Mike</td>
                         <td>Develop</td>
                         <td className='text-center'>2013</td>
                         <td className='text-right'>€ 99,225</td>
                         <td className='text-right'>
-                          
                           <Button
                             className='btn-link'
                             color='success'
@@ -244,226 +239,6 @@ class Dashboard extends React.Component {
                             target='tooltip974171201'
                           >
                             Approve
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>
-                          <div className='photo'>
-                            <img
-                              alt='...'
-                              src={require('assets/img/robi.jpg')}
-                            />
-                          </div>
-                        </td>
-                        <td>John Doe</td>
-                        <td>Design</td>
-                        <td className='text-center'>2012</td>
-                        <td className='text-right'>€ 89,241</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon'
-                            color='success'
-                            id='tooltip533157871'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip533157871'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link'
-                            color='danger'
-                            id='tooltip423541936'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip423541936'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>
-                          <div className='photo'>
-                            <img
-                              alt='...'
-                              src={require('assets/img/lora.jpg')}
-                            />
-                          </div>
-                        </td>
-                        <td>Alex Mike</td>
-                        <td>Design</td>
-                        <td className='text-center'>2010</td>
-                        <td className='text-right'>€ 92,144</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon'
-                            color='success'
-                            id='tooltip101947879'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip101947879'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link'
-                            color='danger'
-                            id='tooltip964133889'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip964133889'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>
-                          <div className='photo'>
-                            <img
-                              alt='...'
-                              src={require('assets/img/jana.jpg')}
-                            />
-                          </div>
-                        </td>
-                        <td>Mike Monday</td>
-                        <td>Marketing</td>
-                        <td className='text-center'>2013</td>
-                        <td className='text-right'>€ 49,990</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon btn-neutral'
-                            color='success'
-                            id='tooltip932549650'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip932549650'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link btn-neutral'
-                            color='danger'
-                            id='tooltip696208424'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip696208424'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>
-                          <div className='photo'>
-                            <img
-                              alt='...'
-                              src={require('assets/img/robi.jpg')}
-                            />
-                          </div>
-                        </td>
-                        <td>Paul Dickens</td>
-                        <td>Communication</td>
-                        <td className='text-center'>2015</td>
-                        <td className='text-right'>€ 69,201</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon btn-neutral'
-                            color='success'
-                            id='tooltip188998609'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip188998609'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link btn-neutral'
-                            color='danger'
-                            id='tooltip991400757'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip991400757'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>
-                          <div className='photo'>
-                            <img
-                              alt='...'
-                              src={require('assets/img/emilyz.jpg')}
-                            />
-                          </div>
-                        </td>
-                        <td>Manuel Rico</td>
-                        <td>Manager</td>
-                        <td className='text-center'>2012</td>
-                        <td className='text-right'>€ 99,201</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon btn-neutral'
-                            color='success'
-                            id='tooltip967557276'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip967557276'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link btn-neutral'
-                            color='danger'
-                            id='tooltip467555755'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip467555755'
-                          >
-                            Tooltip on top
                           </UncontrolledTooltip>
                         </td>
                       </tr>
@@ -556,206 +331,21 @@ class Dashboard extends React.Component {
                             delay={0}
                             target='tooltip324367706'
                           >
-                            Tooltip on top
+                            Delete
                           </UncontrolledTooltip>
                           <Button
                             className='btn-link'
                             color='danger'
-                            id='tooltip974171201'
+                            id='tooltip974171202'
                             size='sm'
                           >
                             <i className='tim-icons icon-simple-remove' />
                           </Button>
                           <UncontrolledTooltip
                             delay={0}
-                            target='tooltip974171201'
+                            target='tooltip974171202'
                           >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>2</td>
-                        <td>John Doe</td>
-                        <td>Design</td>
-                        <td className='text-center'>2012</td>
-                        <td className='text-right'>€ 89,241</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon'
-                            color='success'
-                            id='tooltip533157871'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip533157871'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link'
-                            color='danger'
-                            id='tooltip423541936'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip423541936'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>3</td>
-                        <td>Alex Mike</td>
-                        <td>Design</td>
-                        <td className='text-center'>2010</td>
-                        <td className='text-right'>€ 92,144</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon'
-                            color='success'
-                            id='tooltip101947879'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip101947879'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link'
-                            color='danger'
-                            id='tooltip964133889'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip964133889'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>4</td>
-                        <td>Mike Monday</td>
-                        <td>Marketing</td>
-                        <td className='text-center'>2013</td>
-                        <td className='text-right'>€ 49,990</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon btn-neutral'
-                            color='success'
-                            id='tooltip932549650'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip932549650'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link btn-neutral'
-                            color='danger'
-                            id='tooltip696208424'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip696208424'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>5</td>
-                        <td>Paul Dickens</td>
-                        <td>Communication</td>
-                        <td className='text-center'>2015</td>
-                        <td className='text-right'>€ 69,201</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon btn-neutral'
-                            color='success'
-                            id='tooltip188998609'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip188998609'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link btn-neutral'
-                            color='danger'
-                            id='tooltip991400757'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip991400757'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='text-center'>6</td>
-                        <td>Manuel Rico</td>
-                        <td>Manager</td>
-                        <td className='text-center'>2012</td>
-                        <td className='text-right'>€ 99,201</td>
-                        <td className='text-right'>
-                          <Button
-                            className='btn-link btn-icon btn-neutral'
-                            color='success'
-                            id='tooltip967557276'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-refresh-01' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip967557276'
-                          >
-                            Tooltip on top
-                          </UncontrolledTooltip>
-                          <Button
-                            className='btn-link btn-neutral'
-                            color='danger'
-                            id='tooltip467555755'
-                            size='sm'
-                          >
-                            <i className='tim-icons icon-simple-remove' />
-                          </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            target='tooltip467555755'
-                          >
-                            Tooltip on top
+                            Approve
                           </UncontrolledTooltip>
                         </td>
                       </tr>

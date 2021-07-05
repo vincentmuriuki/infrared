@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 
-import AuthLayout from "layouts/Auth/Auth.js";
-import AdminLayout from "layouts/Admin/Admin.js";
-import RTLLayout from "layouts/RTL/RTL.js";
+import AuthLayout from "./layouts/Auth/Auth.js";
+import AdminLayout from "./layouts/Admin/Admin.js";
+import RTLLayout from "./layouts/RTL/RTL.js";
 
 import "assets/css/nucleo-icons.css";
 import "react-notification-alert/dist/animate.css";

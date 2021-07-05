@@ -25,10 +25,47 @@ import {
   Col,
   UncontrolledTooltip,
 } from 'reactstrap';
+import ReactBSAlert from 'react-bootstrap-sweetalert';
 
 import { Link } from 'react-router-dom';
 
 class Transactions extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      alert: null,
+    };
+  }
+
+  // to stop the warning of calling setState of unmounted component
+  componentWillUnmount() {
+    var id = window.setTimeout(null, 0);
+    while (id--) {
+      window.clearTimeout(id);
+    }
+  }
+
+  basicAlert = () => {
+    this.setState({
+      alert: (
+        <ReactBSAlert
+          style={{ display: 'block', marginTop: '-100px' }}
+          title="Here's a message!"
+          onConfirm={() => this.hideAlert()}
+          onCancel={() => this.hideAlert()}
+          confirmBtnBsStyle='success'
+          btnSize=''
+        />
+      ),
+    });
+  };
+
+  hideAlert = () => {
+    this.setState({
+      alert: null,
+    });
+  };
+
   render() {
     return (
       <>
@@ -49,10 +86,7 @@ class Transactions extends React.Component {
                         <i className='tim-icons icon-settings-gear-63' />
                       </DropdownToggle>
                       <DropdownMenu right>
-                        <DropdownItem
-                          href='#pablo'
-                          onClick={(e) => e.preventDefault()}
-                        >
+                        <DropdownItem onClick={this.successAlert}>
                           Filter
                         </DropdownItem>
                       </DropdownMenu>

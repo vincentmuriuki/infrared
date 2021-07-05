@@ -1,8 +1,7 @@
-import Calendar from "views/Calendar.js";
-import Widgets from "views/Widgets.js";
-import Dashboard from "views/Dashboard.js";
-import Users from 'views/Users';
+import Dashboard from "./views/Dashboard.js";
+import Users from './views/Users';
 import Transactions from 'views/Transactions';
+import Rides from 'views/Rides.js';
 
 const routes = [
   {
@@ -37,15 +36,7 @@ const routes = [
     name: "Rides",
     rtlName: "الحاجيات",
     icon: "tim-icons icon-spaceship",
-    component: Widgets,
-    layout: "/admin"
-  },
-  {
-    path: "/calendar",
-    name: "Calendar",
-    rtlName: "التقويم",
-    icon: "tim-icons icon-time-alarm",
-    component: Calendar,
+    component: Rides,
     layout: "/admin"
   }
 ];
